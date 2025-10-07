@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffice College</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+          <img class="logo" src="./logo2.jpg" alt="Suffice College Logo">
+          <img class="boy" src="./boy.png" alt="Decorative image of a boy">
+          <img class="girl" src="./girl.png" alt="Decorative image of a girl">
+        <div class="container">
+      <!-- Registration Form -->
+      <div id="registerForm">
+        <h2>Register</h2>
+        <input type="text" id="regUsername" placeholder="Username" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <p class="switch" onclick="showLogin()">Already have an account? Login</p>
+        <p class="message" id="regMsg"></p>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginForm" class="hidden">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p class="switch" onclick="showRegister()">Don't have an account? Register</p>
+        <p class="message" id="loginMsg"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
